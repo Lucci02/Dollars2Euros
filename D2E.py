@@ -1,17 +1,17 @@
+print("Dollars To Euro in Python")
 
-print("US Dollar To Euro in Python")
+dolr = float(input('Enter Dollar Value : '))
 
-us_dollar = float(input('Enter US Dollar Value : '))
+euros = dolr * 0.94540 
 
-euro = us_dollar *  0.94540 
+print("$" + str(dolr) + " " + "US Dollar is equivalent to " + str(euros) + " " +  "European Euros" )
 
-print("$" + str(us_dollar) + " " + "US Dollar is equivalent to " + str(euro) + " " +  "European Euros" )
+yesono = input("Do you want to convert a number again?: (y/n)")
 
-YON = input("Do you want to convert a number again?: (y/n)")
-
-while YON == "y":
-    us_dollar = float(input('Enter US Dollar Value : '))
-    euro = us_dollar *  0.94540 
-    print("$" + str(us_dollar) + " " + "US Dollar is equivalent to " + str(euro) + " " +  "European Euros" )
-    YON = input("Do you want to convert a number again?: (y/n)")
+while yesono == "y":
+    dolr = float(input('Enter US Dollar Value : '))
+    euro = dolr *  0.94540 
+    print("$" + str(dolr) + " " + "US Dollar is equivalent to " + str(euros) + " " +  "European Euros" )
+    yesono = input("Do you want to convert a number again?: (y/n)")
+    
     
